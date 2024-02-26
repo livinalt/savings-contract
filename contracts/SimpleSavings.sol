@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-pragma solidity  0.8.24;
+pragma solidity 0.8.24;
 
 // This is a simple contract that deposit fund into a contract. And also keep track of funds transferred into the contract. 
 
-    error NOT_ACCOUNT_OWNER();
-    error INSUFFICIENT_FUNDS();
-    error INVALID_AMOUNT();
-    error ADDRESS_ZERO_DETECTED();
+error NOT_ACCOUNT_OWNER();
+error INSUFFICIENT_FUNDS();
+error INVALID_AMOUNT();
+error ADDRESS_ZERO_DETECTED();
 
 contract SimpleSavings {
     address public owner;
@@ -17,8 +17,8 @@ contract SimpleSavings {
 
     event DepositCompleted(address indexed owner, uint256 indexed _value);
 
-    constructor() {
-        owner = msg.sender;
+    constructor(address _owner) {
+        owner = _owner;
     }
 
     function makeDeposit(uint256 _value) external payable {

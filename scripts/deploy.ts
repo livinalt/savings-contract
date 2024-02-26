@@ -2,12 +2,12 @@ import { ethers } from "hardhat";
 
 async function main() {
   
-  const simpleSavings = await ethers.deployContract("SimpleSavings");
+  const simpleSavingsFactory = await ethers.deployContract("SimpleSavingsFactory");
 
-  await simpleSavings.waitForDeployment();
+  await simpleSavingsFactory.waitForDeployment();
 
   console.log(
-    `SimpleSavings has been deployed to ${simpleSavings.target}`
+    `SimpleSavingsFactory has been deployed to ${simpleSavingsFactory.target}`
   );
 }
 
