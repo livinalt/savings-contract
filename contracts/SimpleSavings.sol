@@ -1,8 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity  0.8.24;
 
-// Write a simple contract that deposit fund into a contract. And also keep track of funds transferred into the contract. 
-// Add a function to the balance of address that have deposited into the contract.(Submit Github gist)
+// This is a simple contract that deposit fund into a contract. And also keep track of funds transferred into the contract. 
 
     error NOT_ACCOUNT_OWNER();
     error INSUFFICIENT_FUNDS();

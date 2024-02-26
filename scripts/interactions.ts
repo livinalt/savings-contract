@@ -2,7 +2,7 @@ import { ethers } from "hardhat";
 
 async function main() {
 
-    const contractAddress = "0x4E479E19b061e60F2817f6c205E3Ca09D3982676"; //sepolia
+    const contractAddress = "0xCA2d8c7dff657231A17dF9746bAa615c9B29Af5e"; //sepolia
     // const contractAddress2 = "0xCe4b9D48850f28096598D326647168fCB43944D2"; //mumbai
 
     const SimpleSavings = await ethers.getContractAt("SimpleSavings", contractAddress);
